@@ -28,5 +28,4 @@
 `trivy image --severity CRITICAL --ignore-unfixed --exit-code 1 fest-backend:0.2` exits with code 0.
 Reports: `reports/trivy-before.txt`, `reports/trivy-after.txt`.
 
-## Steps not completed
-- None. All five stages completed; evidence screenshots are in `screenshots/`.
+
