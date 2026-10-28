@@ -12,7 +12,9 @@
 - **Claude Code (Anthropic)** — wrote the Dockerfiles, `compose.yaml` and this README, ran the build/scan/push/verify commands on my machine, and explained errors.
 
 ## Digest of 1.0.0 as pushed to Docker Hub
-`sha256:bf261f35e584a91ac07858d9bfd14346d5f6ce5d6dd4f9ee297e19c83cc3257a`
+`sha256:7e8030915ac8822415e722fdcfa2df6b19c6244016c20d2087ef82f88ed372bf`
+
+(The first push produced a manifest list, `sha256:bf261f35…`; re-pushing from the local single-platform image moved tags `1.0.0` and `1.0` to the digest above, which is what Docker Hub shows and what is signed.)
 
 1.0.0 is signed with cosign (`cosign.pub`); 1.0.1 (`sha256:aae80837ff66e44a123366ee998650535e870324acb28fc45a71e821d7a783b2`) is deliberately unsigned and `cosign verify` rejects it.
 
@@ -27,4 +29,4 @@
 Reports: `reports/trivy-before.txt`, `reports/trivy-after.txt`.
 
 ## Steps not completed
-- None of the five stages failed. Screenshots in `screenshots/` are added separately from my own terminal.
+- None. All five stages completed; evidence screenshots are in `screenshots/`.
